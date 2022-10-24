@@ -1,0 +1,20 @@
+
+import { {{properCase name}} as {{properCase name}}Com } from '../{{snakeCase name}}';
+import { storiesService } from "helpers/services";
+
+const argTypes = {}
+
+const storySetting = {
+  component: {{properCase name}}Com,
+  argTypes: storiesService.disableArgTypesControl(argTypes),
+};
+
+export default storySetting;
+
+const {{properCase name}}Template = (args) => <{{properCase name}}Com {...args } />;
+
+export const {{properCase name}} = {{properCase name}}Template.bind({});
+
+{{properCase name}}.args = {
+
+};

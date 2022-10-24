@@ -1,0 +1,18 @@
+// foundations
+import { render, screen } from "@testing-library/react";
+import ReactDOM from "react-dom";
+
+// components
+import { {{properCase name}} } from './{{snakeCase name}}';
+
+it("renders without crashing", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<{{ properCase name }} />, div);
+});
+{{#if hasChildren}}
+it("renders button text", () => {
+  const text = "TEST TEXT";
+  render(<{{ properCase name }}>{text}</{{ properCase name }}>);
+  expect(screen.getByText(text)).toBeInTheDocument();
+});
+{{/if}}

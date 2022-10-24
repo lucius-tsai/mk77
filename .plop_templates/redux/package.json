@@ -1,0 +1,3 @@
+{
+  "main": "{{snakeCase reduxName}}_redux.js"
+}

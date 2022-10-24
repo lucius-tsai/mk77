@@ -1,0 +1,39 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { {{properCase name}} as {{properCase name}}Com } from '../{{snakeCase name}}';
+
+import {{properCase name}}StorySetting, { {{properCase name}} as {{properCase name}}Story } from './{{snakeCase name}}.stories';
+import { StoryTitle } from "./{{snakeCase name}}_const";
+
+import {
+  Basic{{properCase name}},
+  Basic{{properCase name}}Code,
+} from "./_examples/index.examples";
+
+import { getParametersByCode } from "helpers/services/stories";
+
+<Meta
+  title={`${StoryTitle}`}
+  component={ {{properCase name}}Com }
+  argTypes={ {{properCase name}}StorySetting.argTypes }
+/>
+
+# {{properCase name}}
+
+
+
+<Canvas>
+  <Story name="基本用法" parameters={getParametersByCode(Basic{{properCase name}}Code)}>
+    <Basic{{properCase name}} />
+  </Story>
+</Canvas>
+
+## Props
+
+<Canvas withSource="none">
+  <Story name="Props">
+    { {{properCase name}}Story }
+  </Story>
+</Canvas>
+
+<ArgsTable story="Props" />

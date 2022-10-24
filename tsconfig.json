@@ -17,6 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
+      "@/redux/*": ["redux/*"],
+      "@/utils/*": ["utils/*"],
+      "@/mocks/*": ["mocks/*"],
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["styles/*"]
     }

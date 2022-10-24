@@ -1,0 +1,5 @@
+import Basic{{properCase name}} from "./1_basic_{{snakeCase name}}.examples";
+
+import Basic{{properCase name}}Code from "!!raw-loader!./1_basic_{{snakeCase name}}.examples.tsx";
+
+export { Basic{{properCase name}}, Basic{{properCase name}}Code };

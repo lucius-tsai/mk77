@@ -1,0 +1,1 @@
+export const StoryTitle = `{{ titleCase category }}/{{ titleCase name }}`;

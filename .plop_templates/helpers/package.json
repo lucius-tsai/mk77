@@ -1,0 +1,3 @@
+{
+  "main": "{{snakeCase fileName}}_{{snakeCase helperType}}.js"
+}

@@ -1,0 +1,22 @@
+import React from "react";
+
+import { {{properCase name}}Props } from "./{{snakeCase name}}.types";
+
+// styles
+{{#if modules}}
+import classNames from "classnames/bind";
+import styles from "./{{snakeCase name}}.module.scss";
+{{/if}}
+
+// variables
+const cx = classNames.bind(styles);
+
+// component(s)
+const {{properCase name}}: React.FC<{{properCase name}}Props> = () => {
+  return <h1 className={cx('{{snakeCase name}}')}>{{ titleCase name }}</h1>;
+};
+
+// export
+export default {{properCase name}};
+
+export { {{properCase name}} };

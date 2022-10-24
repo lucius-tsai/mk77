@@ -1,24 +1,38 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "create": "plop",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.6",
+    "axios": "^1.1.3",
+    "classnames": "^2.3.2",
     "next": "latest",
+    "next-redux-wrapper": "^8.0.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.4",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
     "@types/react": "18.0.9",
+    "inquirer-directory": "^2.2.0",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
+    "msw": "^0.47.4",
+    "plop": "^3.1.1",
+    "plop-pack-fancy-comments": "^0.2.1",
     "typescript": "4.6.4"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
